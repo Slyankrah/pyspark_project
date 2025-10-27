@@ -41,3 +41,6 @@ print(df.show())
 #
 spark.stop()
 
+
+# Command to run spark on jenkins = spark-submit src/spark_project.py
+
