@@ -4,9 +4,9 @@ from pyspark.sql.window import Window
 from pyspark.sql.functions import row_number
 import sys
 
-run_date = sys.argv[1] if len(sys.argv)>1 else None
-if not run_date:
-    raise SystemExit("Usage: etl_job.py <load_date>")
+# run_date = sys.argv[1] if len(sys.argv)>1 else None
+# if not run_date:
+#     raise SystemExit("Usage: etl_job.py <load_date>")
 
 spark = (SparkSession.builder.
          appName("raw_loans_to_curated").
