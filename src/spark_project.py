@@ -10,6 +10,7 @@ import sys
 
 spark = (SparkSession.builder.
          appName("raw_loans_to_curated").
+         config("hive.metastore.uris", "thrift://18.134.163.221:9083").
          enableHiveSupport().
          getOrCreate())
 
