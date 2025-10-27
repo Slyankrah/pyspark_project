@@ -38,5 +38,5 @@ print(df.show())
 #    .saveAsTable("curated_db.curated_table")
 # )
 #
-# spark.stop()
+spark.stop()
 
