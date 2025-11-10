@@ -45,7 +45,7 @@ producer = KafkaProducer(
 )
 
 # Kafka topic and key
-topic = "trainarrival"
+topic = "sylvester_test"
 key = "1"
 
 # Send message to Kafka
