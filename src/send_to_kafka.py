@@ -5,7 +5,7 @@ import json
 
 import os
 
-os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-21-openjdk-21.0.7.0.6-2.el8.x86_64/bin/java"
 os.environ["PATH"] = os.path.join(os.environ["JAVA_HOME"], "bin") + os.pathsep + os.environ["PATH"]
 
 
