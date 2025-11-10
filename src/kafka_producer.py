@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 import requests
-from kafka import KafkaProducer
+from kafka_producer import KafkaProducer
 import json
 
 # Initialize SparkSession
