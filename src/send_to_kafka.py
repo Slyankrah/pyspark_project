@@ -3,6 +3,12 @@ import requests
 from kafka import KafkaProducer
 import json
 
+import os
+
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
+os.environ["PATH"] = os.path.join(os.environ["JAVA_HOME"], "bin") + os.pathsep + os.environ["PATH"]
+
+
 
 # Initialize SparkSession
 spark = SparkSession.builder.appName("TrainArrival").getOrCreate()
