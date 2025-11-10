@@ -1,7 +1,8 @@
 from pyspark.sql import SparkSession
 import requests
-from kafka_producer import KafkaProducer
+from kafka import KafkaProducer
 import json
+
 
 # Initialize SparkSession
 spark = SparkSession.builder.appName("TrainArrival").getOrCreate()
